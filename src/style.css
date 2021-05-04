@@ -17,6 +17,7 @@ ul {
 
 li {
   list-style: none;
+  text-transform: capitalize;
   color: rgb(46, 182, 182);
   font-size: 16px;
   font-weight: 100;
@@ -40,7 +41,7 @@ li {
 .weather-temperature img {
   display: inline;
   width: 70px;
-  margin-right: 10px;
+  margin-right: 5px;
   height: 64px;
 }
 
