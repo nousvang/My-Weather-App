@@ -10,6 +10,10 @@ h1 {
   margin-bottom: 0;
 }
 
+.float-left {
+  font-size: 45px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -37,6 +41,17 @@ li::first-letter {
   padding: 20px;
   border: 2px solid;
   border-radius: 5px;
+  background: rgb(211, 238, 253);
+}
+
+.form-control {
+  background: rgb(196, 231, 255);
+}
+
+.btn {
+  background: rgb(196, 231, 255);
+  border-color: rgb(202, 207, 207);
+  color: rgb(121, 126, 126);
 }
 
 .overview {
@@ -79,7 +94,7 @@ li::first-letter {
 
 .weather-forecast-day {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temp-min {
