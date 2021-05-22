@@ -20,7 +20,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type a city..."
@@ -29,8 +29,20 @@
                   autocomplete="off"
                 />
               </div>
-              <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-primary" />
+              <div class="col-4">
+                <input
+                  type="submit"
+                  value="Search 🔎"
+                  class="btn btn-primary"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="submit"
+                  value="📍"
+                  class="btn btn-location"
+                  id="location-btn"
+                />
               </div>
             </div>
           </form>
@@ -43,7 +55,7 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
+              <div class="d-flex weather-temperature">
                 <img src="" alt="" id="icon" class="float-left" />
                 <div class="float-left">
                   <strong id="temperature"></strong
@@ -74,7 +86,7 @@
             </div>
           </div>
         </div>
-        <small class="link">
+        <small>
           <a href="https://github.com/nousvang/My-Weather-App" target="_blank">
             Open-source code</a
           >
