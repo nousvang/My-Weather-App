@@ -124,7 +124,7 @@ function currentLocation() {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let locationButton = document.querySelector("#location-btn");
+let locationButton = document.querySelector(".btn-location");
 locationButton.addEventListener("click", currentLocation);
 
 search("New York");

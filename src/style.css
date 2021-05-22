@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Hachi Maru Pop", cursive;
 }
 
 h1 {
@@ -10,10 +10,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.float-left {
-  font-size: 45px;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -22,7 +18,7 @@ ul {
 li {
   list-style: none;
 
-  color: rgb(46, 182, 182);
+  color: rgb(83, 224, 224);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -41,15 +37,15 @@ li::first-letter {
   padding: 20px;
   border: 2px solid;
   border-radius: 5px;
-  background: rgb(211, 238, 253);
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .form-control {
-  background: rgb(196, 231, 255);
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .btn {
-  background: rgb(196, 231, 255);
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   border-color: rgb(202, 207, 207);
   color: rgb(121, 126, 126);
 }
@@ -69,7 +65,7 @@ li::first-letter {
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
-  color: rgb(10, 175, 175);
+  color: rgb(83, 224, 224);
 }
 
 .weather-temperature .units {
@@ -78,7 +74,7 @@ li::first-letter {
   top: -32px;
 }
 .weather-temperature .active {
-  color: rgb(10, 175, 175);
+  color: rgb(83, 224, 224);
   cursor: default;
 }
 
@@ -90,9 +86,20 @@ li::first-letter {
   margin-top: 20px;
   text-align: center;
   color: rgb(83, 224, 224);
+  font-size: 14px;
 }
 
-.weather-forecast-day {
+.weather-forecast .col-2 {
+  border: 1px solid rgb(121, 126, 126);
+  border-radius: 10px;
+  max-width: 90px;
+  padding: 1px;
+  margin: 0px 3px;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-color: rgb(202, 207, 207);
+}
+
+.weather-forecast .weather-forecast-day {
   font-size: 16px;
   opacity: 0.6;
 }
@@ -103,4 +110,12 @@ li::first-letter {
 
 .weather-forecast-temps {
   font-size: 13px;
+}
+
+.coder {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
