@@ -66,7 +66,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "e84830669835db80ec691f78d61d1107";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
@@ -112,17 +111,17 @@ function showPosition(position) {
   let latitude = `${position.coords.latitude}`;
   let longitude = `${position.coords.longitude}`;
   let apiKey = "e84830669835db80ec691f78d61d1107";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
   axios.get(`${apiUrl}$appid=${apiKey}`).then(displayTemperature);
 }
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 function currentLocation() {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
-
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
 
 let locationButton = document.querySelector(".btn-location");
 locationButton.addEventListener("click", currentLocation);
