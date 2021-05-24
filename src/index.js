@@ -118,7 +118,7 @@ function showPosition(position) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-function currentLocation() {
+function currentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
